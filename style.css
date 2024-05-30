@@ -130,9 +130,9 @@
 }
 
 .red-line {
-    border: 1px solid red; /* Border style for the line */
-    width: 1000px; /* Width of the line */
-    height: 0; /* Set height to 0 to make it a horizontal line */
+    border: 1px solid red;
+    width: 1000px; 
+    height: 0; 
 }
 
 
