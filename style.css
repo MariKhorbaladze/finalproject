@@ -95,7 +95,6 @@
     width: 80%;
     max-width: 580px;
     overflow: hidden;
-    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-left: 50px;
 }
@@ -110,19 +109,20 @@
     height: auto;
     display: block;
     max-width: 580px;
-    max-width: 580px;
-    border-radius: 13px;
 }
 
 .first-block-slider { 
     margin-top: 150px;
     margin-left: 300px;
     gap: 5px;
+    
 }
+
 
 .percent-redSlider { 
     color: red;
     display: flex;
+    
 }
 
 .slider-clients { 
@@ -131,8 +131,103 @@
 
 .red-line {
     border: 1px solid red;
-    width: 1000px; 
-    height: 0; 
+    max-width: 1400px; 
+    background-color: #ff4b5c;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 70px;
 }
 
+
+.my-name-secondBlock { 
+    font-size: 40px;
+    text-align: right;
+}
+
+.prof-front { 
+    font-size: 14px;
+    color: #DAAE19;
+    text-align: end;
+    margin-bottom: 50px;
+}
+
+h4 { 
+  font-size: 15px;
+  color: #555555;
+  text-align: end;
+  margin-bottom: 50px;
+}
+
+
+.entire-aboutMe { 
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 150px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hire-me-button {
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 15px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    
+}
+
+.hire-me-button:hover {
+    background-color: #ff1f3d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a { 
+    text-decoration: none;
+}
+
+
+.profile-right-slider {
+    flex: 2;
+    padding: 20px;
+}
+
+.progress-bar-container {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background-color: #ff4b5c;
+    transition: width 0.5s ease-in-out;
+}
+
+.blue-infoBackgroung { 
+    background-color: #131A36;
+}
 

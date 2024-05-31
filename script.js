@@ -18,3 +18,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
     setInterval(nextSlide, 5000);
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const progressBarContainers = document.querySelectorAll('.progress-bar-container');
+
+    const animateProgressBars = () => {
+        progressBarContainers.forEach(container => {
+            const rect = container.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                const progressBar = container.querySelector('.progress');
+                const percent = container.getAttribute('data-percent');
+                progressBar.style.width = `${percent}%`;
+            }
+        });
+    };
+
+    window.addEventListener('scroll', animateProgressBars);
+    window.addEventListener('load', animateProgressBars); 
+});
+
+
