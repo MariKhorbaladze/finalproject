@@ -164,6 +164,7 @@ h4 {
     gap: 5px;
     align-items: center;
     margin-top: 150px;
+    max-width: 1400px;
 }
 
 
@@ -227,12 +228,6 @@ a {
     transition: width 0.5s ease-in-out;
 }
 
-.container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            width: 80%;
-        }
 
 
 .info-section {
@@ -274,3 +269,116 @@ margin-left: 20px;
 margin: 10px 0;
 }
 
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+.cards-img { 
+    width: 60px;
+    height: 60px; 
+    justify-content: center;
+}
+
+.card-txt {
+    font-size: 22px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    max-width: 1400px;
+    height: 560px;
+    gap: 10px;  
+    margin-left: 37px;
+    padding-top: 150px;
+    
+  }
+  
+.card {
+    position: relative;
+    width: 285px;
+    height: 360px;
+    overflow: hidden;
+    cursor: pointer;
+}
+  
+.card-content {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.card-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #15263E;
+    color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    flex-direction: column;
+  }
+  
+  .card:hover .card-info {
+    opacity: 1;
+  }
+  
+  .card-content { 
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 285px;
+    height: 360px;
+  }

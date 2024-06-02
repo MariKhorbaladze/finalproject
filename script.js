@@ -18,6 +18,35 @@ document.addEventListener('DOMContentLoaded', (event) => {
     setInterval(nextSlide, 5000);
 });
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.slide');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.transform = `translateX(${(i - index) * 100}%)`;
+        });
+    }
+
+    function changeSlide(direction) {
+        currentIndex += direction;
+        if (currentIndex >= slides.length) {
+            currentIndex = 0;
+        } else if (currentIndex < 0) {
+            currentIndex = slides.length - 1;
+        }
+        showSlide(currentIndex);
+    }
+
+    prevButton.addEventListener('click', () => changeSlide(-1));
+    nextButton.addEventListener('click', () => changeSlide(1));
+
+    showSlide(currentIndex);
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const progressBarContainers = document.querySelectorAll('.progress-bar-container');
 
@@ -35,6 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', animateProgressBars);
     window.addEventListener('load', animateProgressBars); 
 });
+
+
 
 
 
