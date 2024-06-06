@@ -18,17 +18,14 @@
                 <h1 class="header-up">About me</h1>
             </div> 
         </header>
-        <div class="slider-introductionImg">
-            <div class="about-me">
-                <div class="slider">
-                    <div class="slides">
-                    <img class="slide" src="./imgs/profile-me.jpg" alt="Mari Khorbaladze image">
-                    <img  class="slide" src="./imgs/profile-me.jpg" alt="Mari Khorbaladze image">
-                    <img class="slide" src="./imgs/profile-me.jpg" alt="Mari Khorbaladze image">
-                </div>
-                <button class="prev" id="prev">&#10094;</button>
-                <button class="next" id="next">&#10095;</button>
-                </div>
+            <section class="intro">
+                  <div class="slider-container">
+                      <div class="slider">
+                          <img id="slider-image" src="./imgs/profile-me.jpg" alt="Slider Image">
+                          <button id="prev-btn" class="slider-button">❮</button>
+                          <button id="next-btn" class="slider-button">❯</button>
+                      </div>
+                  </div>
                 <div class="my-info">
                     <p class="first-p">Hi, I' Am </p>
                     <p class="my-name">Mari Khorbaladze</p>
@@ -39,37 +36,41 @@
                    <a href="hhttps://www.linkedin.com/in/mari-khorbaladze-7a7944264/" target="_blank"><img class="logos" src="./imgs/linkedin.webp" alt="linkedin logo"></a>
                    <a href="https://github.com/MariKhorbaladze" target="_blank"> <img class="logos" src="./imgs/github.png" alt="github logo"></a>
                   <div class="first-block-slider">
-                    <span class="percent-redSlider">100% <span class="slider-clients">Satisfied Clients</span> </span>
-                    <span class="red-line"></span>
-                  </div>
+                    <span class="slider_percent">100% <span class="slider_text">Satisfied Clients</span></span>
+                    <div class="main_slider_progress">
+                        <progress class="slider_bar" value="100" max="100">100%</progress>
+                    </div>
+                </div>
+            </div>
                   </div>
                 </div>
             </div>
         </div>
     </section>
+     </section>
  <section class="with-slide">
     <div class="entire-aboutMe">
         <div class="info">
             <h1 class="my-name-secondBlock">Mari Khorbaladze</h1>
             <p class="prof-front">Front-end Developer</p>
-            <h4>I am a Junior Front-end Developer. I want to do my best <br> 
+            <h4 class="desc">I am a Junior Front-end Developer. I want to do my best <br> 
                 for this profession, and this profession itself gives me the <br>
                 chance. I can do my best to achieve results. I am ready to <br>
                 spend all the energy that will bring me success This is my  <br>
                 portfolio where you can learn more about me.
             </h4>
-        
         <div class="button-container">
             <a href="./index.html"><p class="hire-me-button">Hire Me</p></a>
          </div>    
          </div>
-            <div class="slider">
-                <div class="slides">
-                <img class="slide" src="./imgs/profile-me.jpg" alt="Mari Khorbaladze image">
-                <img  class="slide" src="./imgs/profile-me.jpg" alt="Mari Khorbaladze image">
-                <img class="slide" src="./imgs/profile-me.jpg" alt="Mari Khorbaladze image">
-            </div>
-            </div>
+          <div class="slider-secContainer">
+              <div class="slider">
+                  <img id="slider-image" src="./imgs/profile-me.jpg" alt="Slider Image">
+                  <button id="prev-btn" class="slider-button">❮</button>
+                  <button id="next-btn" class="slider-button">❯</button>
+              </div>
+          </div>
+           <!-- ak meored  unda gamovidzaxo slides funkcia -->
         <div class="profile-right-slider">
             <div class="progress-bar-container" data-percent="100">
                 <span class="label">Responsibility (100%)</span>
@@ -99,6 +100,37 @@
     </div>
   </section>
   <section class="blue-blockInfo">
+    <div class="entire-info">
+      <div class="all-info">
+          <div class="card_image">
+              <img src="./imgs/phone.svg" alt="Phone icon"/>
+          </div>
+          <div class="info-text">
+              <span class="info-title">Phone Number</span>
+              <span class="information-text">+995 23 24 25</span>
+          </div>
+      </div>
+      <div class="all-info">
+          <div  class="card_image">
+              <img src="./imgs/address.svg" alt="Address icon"/>
+          </div>
+          <div class="info-text">
+              <span class="info-title">User Address</span>
+              <span class="information-text">Georgia, Tbilisi,</span>
+              <span class="information-text">Georgia, Tbilisi</span>
+          </div>
+      </div>
+      <div class="all-info">
+          <div class="card_image">
+              <img src="./imgs/email.svg" alt="Email icon"/>
+          </div>
+          <div class="info-text">
+              <span class="info-title">Email Address</span>
+              <span class="information-text">khorbaladze787@gmail.com</span>
+              <span class="information-text">khorbaladze787@gmail.com</span>
+          </div>
+      </div>
+  </div>
   </section>
   <section class="cards">
 <div class="container">
@@ -183,6 +215,9 @@
         </div>
       </div>
   </div>
+  </section>
+  <section class="recommendation-block">
+    <div id="slider-container"></div>
   </section>
     <script src="script.js"></script>
 </body>

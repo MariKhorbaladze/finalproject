@@ -1,51 +1,37 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', function () {
+    const images = ["./imgs/profile-me.jpg", "./imgs/me.jpg", "./imgs/black.jpg"];
     let currentIndex = 0;
-    const slides = document.querySelectorAll('.slide');
-    const totalSlides = slides.length;
 
-    function showSlide(index) {
-        const slider = document.querySelector('.slides');
-        slider.style.transform = `translateX(-${index * 100}%)`;
+    const sliderImage = document.getElementById('slider-image');
+    const prevButton = document.getElementById('prev-btn');
+    const nextButton = document.getElementById('next-btn');
+
+    function showImage(index) {
+        sliderImage.src = images[index];
     }
 
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        showSlide(currentIndex);
+    prevButton.addEventListener('click', function () {
+        currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+        showImage(currentIndex);
+    });
+
+    nextButton.addEventListener('click', function () {
+        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+        showImage(currentIndex);
+    });
+
+    showImage(currentIndex);
+
+    function changePhoto() {
+        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+        showImage(currentIndex);
     }
 
-    showSlide(currentIndex);
-
-    setInterval(nextSlide, 5000);
+    setInterval(changePhoto, 5000);
 });
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelectorAll('.slide');
-    const prevButton = document.getElementById('prev');
-    const nextButton = document.getElementById('next');
-    let currentIndex = 0;
 
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.style.transform = `translateX(${(i - index) * 100}%)`;
-        });
-    }
-
-    function changeSlide(direction) {
-        currentIndex += direction;
-        if (currentIndex >= slides.length) {
-            currentIndex = 0;
-        } else if (currentIndex < 0) {
-            currentIndex = slides.length - 1;
-        }
-        showSlide(currentIndex);
-    }
-
-    prevButton.addEventListener('click', () => changeSlide(-1));
-    nextButton.addEventListener('click', () => changeSlide(1));
-
-    showSlide(currentIndex);
-});
 
 document.addEventListener('DOMContentLoaded', () => {
     const progressBarContainers = document.querySelectorAll('.progress-bar-container');
@@ -66,11 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// recomendacia 
 
-
-
-
-
+const recDiv = document.createElement("div")
+recDiv.setAttribute("id", "rec-div")
+document.getElementById("rec-div").style.backgroundImage = "url('./imgs/pixel.svg')";
+document.body.appendChild(recDiv)
 
 
 

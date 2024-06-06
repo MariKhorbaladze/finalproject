@@ -5,13 +5,15 @@
 }
 
 .introduction { 
-     background: #DDDDDD;
+     background-color: #DDDDDD;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
+    
 }
 
 .header-left h1 {
@@ -57,11 +59,9 @@
     z-index: 1; 
 }
 
-.about-me { 
-    display: flex;
-}
-.my-info { 
-    margin-left: 150px;  
+
+p { 
+    margin-right: 50px;
 }
 
 
@@ -73,6 +73,7 @@
 
 .my-name { 
     font-size: 71px;
+    margin-bottom: 20px;
 }
 
 .profession { 
@@ -84,64 +85,76 @@
 .logos { 
     width: 30px;
     height: 30px;
+    margin-bottom: 50px;
 }
 
 .logos-gap { 
-   gap: 5px;
+   gap: 13px;
+   background-color: #DDDDDD;
+   margin-bottom: 150px;
    
 }
 
 .slider {
-    width: 80%;
-    max-width: 580px;
+    width: 100%;
+    position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-left: 50px;
-    
-}
-
-.slides {
-    display: flex;
-    transition: transform 1s ease-in-out;
-}
-
-.slide {
-    height: auto;
-    display: block;
-    max-width: 100%;
-}
-
-.first-block-slider { 
-    margin-top: 150px;
-    margin-left: 300px;
-    gap: 5px;
-    
 }
 
 
-.percent-redSlider { 
-    color: red;
-    display: flex;
-    
-}
-
-.slider-clients { 
-    color: black;
-}
-
-.red-line {
-    border: 1px solid red;
-    max-width: 1200px; 
-    background-color: #ff4b5c;
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    padding: 30px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     border: none;
-    border-radius: 5px;
-    padding: 0px 70px;
+    cursor: pointer;
+}
+
+.first-block-slider{
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 50px;
+}
+
+.slider_percent {
+    color: #E93656;
+    font-size: 24px;
+}
+
+.slider_text {
+    color: #212121;
+    font-size: 24px;
+}
+
+
+.slider_bar {
+    width: 120%;
+    height: 8px;
+    appearance: none;
+}
+
+progress::-webkit-progress-value {
+    background:  #E93656;
+    border-radius: 12px;
+}
+
+progress::-webkit-progress-bar {
+    border-radius: 12px;
+}
+
+.text-info {
+    justify-content: center;
+    
 }
 
 
 .my-name-secondBlock { 
     font-size: 40px;
-    text-align: right;
+    text-align: end;
 }
 
 .prof-front { 
@@ -151,20 +164,22 @@
     margin-bottom: 50px;
 }
 
-h4 { 
+.desc { 
   font-size: 15px;
   color: #555555;
   text-align: end;
   margin-bottom: 50px;
+  line-height: 26px;
 }
 
 
 .entire-aboutMe { 
     display: flex;
-    gap: 5px;
+    justify-content: center;
+    gap: 30px;
     align-items: center;
     margin-top: 150px;
-    max-width: 1200px;
+    max-width: 1400px;
 }
 
 
@@ -271,22 +286,15 @@ margin: 10px 0;
 
 .slider {
     position: relative;
-    width: 80%;
     max-width: 600px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
     overflow: hidden;
 }
 
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
 
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.slide img {
+.slider-image {
     width: 100%;
     display: block;
 }
@@ -330,10 +338,10 @@ button {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(2, 1fr); 
-    max-width: 1200px;
+    max-width: 1400px;
     height: 560px;
     gap: 10px;  
-    margin-left: 37px;
+    margin-left: 50px;
     padding-top: 150px;
     padding-bottom: 500px;
     
@@ -352,6 +360,13 @@ button {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 285px;
+    height: 360px;
 }
   
 .card-info {
@@ -375,14 +390,110 @@ button {
 .card:hover .card-info {
     opacity: 1;
 }
-  
-.card-content { 
-    background: #FAFAFA 0% 0% no-repeat padding-box;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
-    width: 285px;
-    height: 360px;
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; 
+    margin-left: 23px;
 }
+
+.slider-secContainer { 
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.entire-info { 
+    background: #131A36 0% 0% no-repeat padding-box;
+    top: 1798px;
+    left: 0px;
+    width: 100%;
+    height: 210px;
+    opacity: 1;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap
+}
+
+
+
+.card_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border: 2px dashed #ffffff;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.card_image:hover {
+    background-color: #e93656;
+    border: 2px solid #e93656;
+}
+
+.all-info {
+    min-width: 300px;
+    display: flex;
+    gap: 15px;
+    
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-title {
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: 0.75px;
+    margin-bottom: 10px;
+}
+
+.information-text {
+    color: #dfdfdf;
+    margin-bottom: 4px;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+}
+
+
 
