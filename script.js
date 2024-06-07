@@ -51,36 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', animateProgressBars); 
 });
 
-
-// recomendacia 
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const carouselSlider = document.getElementById('carousel-slider');
-//     const buttons = document.querySelectorAll('.button');
-//     let currentIndex = 0;
-
-//     function updateSlider(index) {
-//         currentIndex = index;
-//         carouselSlider.style.transform = `translateX(-${index * 100}%)`;
-
-//         buttons.forEach((button, idx) => {
-//             if (idx === index) {
-//                 button.classList.add('active');
-//             } else {
-//                 button.classList.remove('active');
-//             }
-//         });
-//     }
-
-//     buttons.forEach(button => {
-//         button.addEventListener('click', () => {
-//             const index = parseInt(button.getAttribute('data-index'));
-//             updateSlider(index);
-//         });
-//     });
-
-//     updateSlider(currentIndex); // Initialize the slider with the first slide
-// });
+// recomendacia
 
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.button');
@@ -109,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             updateSlider(index);
         });
     });
+    
 });
 
 

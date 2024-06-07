@@ -526,7 +526,6 @@ button {
     align-items: center;
     display: flex;
     gap: 50px;
-    display: block;
 }
 
 
@@ -556,7 +555,6 @@ button {
 .button {
     width: 15px;
     height: 15px;
-    margin: 0 5px;
     background-color: transparent;
     border: 2px solid white;
     cursor: pointer;
