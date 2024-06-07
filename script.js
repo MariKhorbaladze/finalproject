@@ -54,12 +54,99 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // recomendacia 
 
-const recDiv = document.createElement("div")
-recDiv.setAttribute("id", "rec-div")
-document.getElementById("rec-div").style.backgroundImage = "url('./imgs/pixel.svg')";
-document.body.appendChild(recDiv)
+// document.addEventListener('DOMContentLoaded', () => {
+//     const carouselSlider = document.getElementById('carousel-slider');
+//     const buttons = document.querySelectorAll('.button');
+//     let currentIndex = 0;
+
+//     function updateSlider(index) {
+//         currentIndex = index;
+//         carouselSlider.style.transform = `translateX(-${index * 100}%)`;
+
+//         buttons.forEach((button, idx) => {
+//             if (idx === index) {
+//                 button.classList.add('active');
+//             } else {
+//                 button.classList.remove('active');
+//             }
+//         });
+//     }
+
+//     buttons.forEach(button => {
+//         button.addEventListener('click', () => {
+//             const index = parseInt(button.getAttribute('data-index'));
+//             updateSlider(index);
+//         });
+//     });
+
+//     updateSlider(currentIndex); // Initialize the slider with the first slide
+// });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.button');
+
+    function updateSlider(index) {
+        const slides = document.querySelectorAll('.carousel-slide');
+        slides.forEach((slide, idx) => {
+            if (idx === index) {
+                slide.style.display = 'block';  
+            } else {
+                slide.style.display = 'none';  
+            }
+        });
+
+        buttons.forEach((button, idx) => {
+            if (idx === index) {
+                button.classList.add('active');
+            } else {
+                button.classList.remove('active');
+            }
+        });
+    }
+
+    buttons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            updateSlider(index);
+        });
+    });
+});
 
 
-
-
+// document.addEventListener("DOMContentLoaded", function() {
+//     const categories = document.querySelectorAll('.category');
+//     const projects = document.querySelectorAll('.grid-container');
+  
+//     categories.forEach(category => {
+//       category.addEventListener('click', function() {
+//         this.classList.toggle('selected');
+        
+//         const selectedCategories = getSelectedCategories();
+//         showProjects(selectedCategories);
+//       });
+//     });
+  
+//     function getSelectedCategories() {
+//       const selectedCategories = [];
+//       categories.forEach(category => {
+//         if (category.classList.contains('selected')) {
+//           selectedCategories.push(category.dataset.category);
+//         }
+//       });
+//       return selectedCategories;
+//     }
+  
+//     function showProjects(selectedCategories) {
+//       projects.forEach(project => {
+//         const projectCategory = project.dataset.category;
+//         if (selectedCategories.includes("all") || selectedCategories.includes(projectCategory)) {
+//           project.style.display = "block";
+//         } else {
+//           project.style.display = "none";
+//         }
+//       });
+//     }
+//   });
+  
+  
+  
 

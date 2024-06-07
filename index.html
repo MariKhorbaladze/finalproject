@@ -29,9 +29,9 @@
                 <div class="my-info">
                     <p class="first-p">Hi, I' Am </p>
                     <p class="my-name">Mari Khorbaladze</p>
-                    <p class="profession">I am a Front-End Developer</p>
+                    <p class="profession1">I am a Front-End Developer</p>
                   <div class="logos-gap">
-                   <a href="https://www.facebook.com/mari.khorbaladze.7" target="_blank"> <img class="logos" src="./imgs/facebook-color-icon-2048x2048-bfly1vxr.png"  alt="facebook logo"></a> 
+                   <a href="https://www.facebook.com/mari.khorbaladze.7" target="_blank"> <img class="logos" src="./imgs/facebook.png"  alt="facebook logo"></a> 
                    <a href="https://www.instagram.com/khorbaladze_/" target="_blank"><img class="logos" src="./imgs/instagram.jpeg" alt="instagram logo"></a>
                    <a href="hhttps://www.linkedin.com/in/mari-khorbaladze-7a7944264/" target="_blank"><img class="logos" src="./imgs/linkedin.webp" alt="linkedin logo"></a>
                    <a href="https://github.com/MariKhorbaladze" target="_blank"> <img class="logos" src="./imgs/github.png" alt="github logo"></a>
@@ -66,11 +66,8 @@
           <div class="slider-secContainer">
               <div class="slider">
                   <img id="slider-image" src="./imgs/profile-me.jpg" alt="Slider Image">
-                  <button id="prev-btn" class="slider-button">❮</button>
-                  <button id="next-btn" class="slider-button">❯</button>
               </div>
           </div>
-           <!-- ak meored  unda gamovidzaxo slides funkcia -->
         <div class="profile-right-slider">
             <div class="progress-bar-container" data-percent="100">
                 <span class="label">Responsibility (100%)</span>
@@ -217,8 +214,121 @@
   </div>
   </section>
   <section class="recommendation-block">
-    <div id="slider-container"></div>
+    <div class="carousel-container">
+      <div class="carousel-slider" id="carousel-slider">
+          <div class="carousel-slide" id="slide-1">
+              <p class="align-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatem assumenda <br>
+                 quibusdam, accusamus dignissimos iste iusto laudantium exercitationem blanditiis reiciendis <br>
+                 animi autem beatae culpa magnam similique amet ab eaque optio.</p>
+              <img class="img-border" src="./imgs/profilephohto.jpeg" alt="Photo 1" />
+              <div class="flex">
+                <p class="r"></p>
+                <p class="r"></p>
+                <p class="profession">Graphic Designer</p>
+              <h2 class="name">Mau Thomas</h2>
+              </div>
+          </div>
+          <div class="carousel-slide" id="slide-2">
+            <p class="align-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatem assumenda <br>
+               quibusdam, accusamus dignissimos iste iusto laudantium exercitationem blanditiis reiciendis <br>
+               animi autem beatae culpa magnam similique amet ab eaque optio.</p>
+            <img class="img-border" src="./imgs/profilephohto.jpeg" alt="Photo 1" />
+            <div class="flex">
+              <p class="r"></p>
+              <p class="r"></p>
+              <p class="profession">Designer</p>
+            <h2 class="name">John Thomas</h2>
+            </div>
+        </div>
+         <div class="carousel-slide" id="slide-3">
+              <p class="align-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatem assumenda <br>
+                 quibusdam, accusamus dignissimos iste iusto laudantium exercitationem blanditiis reiciendis <br>
+                 animi autem beatae culpa magnam similique amet ab eaque optio.</p>
+              <img class="img-border" src="./imgs/profilephohto.jpeg" alt="Photo 1" />
+              <div class="flex">
+                <p class="r"></p>
+                <p class="r"></p>
+                <p class="profession">Front-end Developer</p>
+              <h2 class="name">James Thomas</h2>
+              </div>
+          </div>
+      </div>
+      <div class="buttons">
+          <div class="button" data-index="0"></div>
+          <div class="button" data-index="1"></div>
+          <div class="button" data-index="2"></div>
+      </div>
+  </div>    
   </section>
+  <!-- <section class="latest-projects-block">
+    <div class="project-head">
+      <h1>Latest Projects</h1>
+    </div>
+    <div class="latest-project">
+      <div class="selectable-block">
+          <p>All</p> 
+          <p>Work</p> 
+          <p>ideas</p>
+          <p>Mockup</p>
+          <p>PSD Design</p>
+          <p>Logo</p> 
+          <p>Presentation</p>
+          <p>Icons</p>
+      </div>
+    </div>
+  </section> -->
+ <!-- <h1 class="latest-projects">Latest Projects</h1>
+  <div class="container1">
+    <div class="categories">
+        <ul class="ul-list">
+            <li class="category" data-category="all">All</li>
+            <li class="category" data-category="work-ideas">Work Ideas</li>
+            <li class="category" data-category="mockup">Mockup</li>
+            <li class="category" data-category="psd-design">PSD Design</li>
+            <li class="category" data-category="logo">Logo</li>
+            <li class="category" data-category="presentation">Presentation</li>
+            <li class="category" data-category="icons">Icons</li>
+        </ul>
+    </div>
+      <div class="grid-photos">
+        <div class="grid-container" data-category="work-ideas">
+          <img class="grid" src="./imgs/grid2.png" alt="">
+          <div class="grid-info">
+            Information about the first image
+          </div>
+        </div>
+        <div class="grid-container" data-category="mockup">
+          <img class="grid" src="./imgs/grid2.png" alt="">
+          <div class="grid-info">
+            Information about the second image
+          </div>
+        </div>
+        <div class="grid-container" data-category="psd-design">
+          <img class="grid" src="./imgs/grid2.png" alt="">
+          <div class="grid-info">
+            Information about the second image
+          </div>
+        </div>        
+        <div class="grid-container" data-category="logo">
+          <img class="grid" src="./imgs/grid2.png" alt="">
+          <div class="grid-info">
+            Information about the third image
+          </div>
+        </div>
+        <div class="grid-container" data-category="presentation">
+          <img class="grid" src="./imgs/grid2.png" alt="">
+          <div class="grid-info">
+            Information about the fourth image
+          </div>
+        </div>
+        <div class="grid-container" data-category="icons">
+          <img class="grid" src="./imgs/grid2.png" alt="">
+          <div class="grid-info">
+            Information about the second image
+          </div>
+        </div>
+      </div>
+    </div> -->
     <script src="script.js"></script>
 </body>
 </html>
