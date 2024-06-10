@@ -84,42 +84,6 @@ button.addEventListener('click', () => {
 });
 
 
-// document.addEventListener("DOMContentLoaded", function() {
-//     const categories = document.querySelectorAll('.category');
-//     const projects = document.querySelectorAll('.grid-container');
-
-//     categories.forEach(category => {
-//       category.addEventListener('click', function() {
-//         this.classList.toggle('selected');
-
-//         const selectedCategories = getSelectedCategories();
-//         showProjects(selectedCategories);
-//       });
-//     });
-
-//     function getSelectedCategories() {
-//       const selectedCategories = [];
-//       categories.forEach(category => {
-//         if (category.classList.contains('selected')) {
-//           selectedCategories.push(category.dataset.category);
-//         }
-//       });
-//       return selectedCategories;
-//     }
-
-//     function showProjects(selectedCategories) {
-//       projects.forEach(project => {
-//         const projectCategory = project.dataset.category;
-//         if (selectedCategories.includes("all") || selectedCategories.includes(projectCategory)) {
-//           project.style.display = "block";
-//         } else {
-//           project.style.display = "none";
-//         }
-//       });
-//     }
-//   });
-
-///latest projects
 
 
 const links = document.querySelectorAll("nav a[id]")
