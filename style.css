@@ -3,25 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* .lato_font { 
-    font-family: lato;
+.slider_content { 
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.lato_font { 
+    font-family: "lato";
 }
 .poppins_font {  
-    font-family: poppins;
+    font-family: "poppins";
 }
 .montserrat_font {
-    font-family: montserrat;
+    font-family: 'montserrat';
 }
 .glacial_font { 
-    font-family: glacial;
+    font-family: "glacial";
 }
 .muli_font { 
-    font-family: muli;
+    font-family: "muli";
 }
-.Jaapokki_font { 
-    font-family: Jaapokki-Regular; */
-
-
+.Jap_font { 
+    font-family: 'Jaapokki-Regular';
+}
+.roboto_font { 
+    font-family: "roboto";
+}
 li { 
     list-style: none;
     text-decoration: none;
@@ -74,6 +82,7 @@ a {
     position: absolute;
     top: 50%;
     right: 0;
+    margin-right: 25px;
     transform: translateY(-50%);
     font-size: 158.3px; 
     color: rgba(0, 0, 0, 0.1); 
@@ -92,7 +101,7 @@ a {
 
 
 .my-info { 
-    margin-right: 80px;
+    margin-right: 50px;
 }
 
 .first-p { 
@@ -209,7 +218,7 @@ progress::-webkit-progress-bar {
     gap: 30px;
     align-items: center;
     margin-top: 150px;
-    max-width: 1400px;
+    max-width: 1440px;
 }
 
 
@@ -366,7 +375,7 @@ button {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(2, 1fr); 
-    max-width: 1400px;
+    max-width: 1440px;
     height: 560px;
     gap: 10px;  
     margin-left: 50px;
@@ -637,7 +646,7 @@ button {
 
 .container1 {
     width: 80%;
-    max-width: 1400px;
+    max-width: 1440px;
     margin: auto;
     display: flex;
 }
